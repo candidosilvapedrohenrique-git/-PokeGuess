@@ -1,0 +1,7 @@
+Modular o código
+
+tratar os erros
+
+escrever o txt 
+
+seleção de mododos/continuar apó pokemon inválido
