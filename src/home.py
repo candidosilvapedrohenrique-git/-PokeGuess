@@ -1,11 +1,10 @@
 import requests
 import random
-from colorama import init, Fore, Style
+from colorama import init, Fore
 
 init()
 
 # Loop control
-hit = False
 attempt = 0
 
 # Choose a random Pokémon and request it.
@@ -18,7 +17,7 @@ randomHeight = randomData["height"]
 randomWeight = randomData["weight"]
 
 
-while hit != True:
+while True:
     # Makes the request for the desired Pokémon.
     pokemon = input("Digite o número ou o nome do seu pokemon: ")
     url = f"https://pokeapi.co/api/v2/pokemon/{pokemon}"
