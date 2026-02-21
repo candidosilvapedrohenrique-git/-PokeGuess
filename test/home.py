@@ -19,7 +19,11 @@ randomWeight = randomData["weight"]
 
 while True:
     # Makes the request for the desired Pokémon.
+    
     pokemon = input("Digite o número ou o nome do seu pokemon: ")
+    
+        
+
     url = f"https://pokeapi.co/api/v2/pokemon/{pokemon}"
 
     response = requests.get(url)
@@ -28,7 +32,7 @@ while True:
     # Check if the Pokémon exists.
     if response.status_code != 200:
         print(Fore.RED + "Esse pokemon não existe")
-        exit()
+        continue
 
 
     # Convert the files and print them.
